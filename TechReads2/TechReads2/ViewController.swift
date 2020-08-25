@@ -15,6 +15,14 @@ class ViewController: UIViewController {
     // Do any additional setup after loading the view.
   }
 
-
+  @IBAction func btnGoToSearchPage(_ sender: UIButton) {
+  }
+  @IBAction func btnToGamePage(_ sender: UIButton) {
+  }
+  @IBAction func btnToTechPage(_ sender: UIButton) {
+  }
+  @IBAction func btnGoToSettings(_ sender: UIButton) {
+  }
+  
 }
 
