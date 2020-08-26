@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="his-Vp-zTb">
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -17,12 +17,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="bOw-9s-WNC"/>
                     </view>
+                    <navigationItem key="navigationItem" id="dCt-8l-Ufu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9M-tb-HcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-990" y="134"/>
+            <point key="canvasLocation" x="-900" y="288"/>
         </scene>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="HomePage" id="BYZ-38-t0r" customClass="ViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,13 +32,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OQJ-jh-PsP">
-                                <rect key="frame" x="40" y="40" width="334" height="308"/>
+                                <rect key="frame" x="40" y="84" width="334" height="286"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7eh-it-mgN">
-                                <rect key="frame" x="40" y="388" width="334" height="308"/>
+                                <rect key="frame" x="40" y="410" width="334" height="286"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8SO-on-XA9">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="69.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="64"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <state key="normal" title="Search">
@@ -45,15 +46,16 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
+                                                <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnGoToSearchPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JnE-Cr-mJa"/>
+                                            <segue destination="HUQ-V3-htI" kind="show" identifier="SearchSegue" id="wPt-dU-XJU"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsA-Sd-Bf3">
-                                        <rect key="frame" x="0.0" y="79.666666666666686" width="334" height="69.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="74" width="334" height="64"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <state key="normal" title="Game">
@@ -61,15 +63,16 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
+                                                <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnToGamePage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dkn-zu-lc9"/>
+                                            <segue destination="XNa-X7-HjF" kind="show" identifier="GameSegue" id="Lej-kf-g4u"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPy-63-a8a">
-                                        <rect key="frame" x="0.0" y="159" width="334" height="69.666666666666686"/>
+                                        <rect key="frame" x="0.0" y="148" width="334" height="64"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Tech">
@@ -77,15 +80,16 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
+                                                <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnToTechPage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hz7-RM-d1a"/>
+                                            <segue destination="Bc3-Gd-Wvy" kind="show" identifier="TechSegue" id="4Zi-1T-iXP"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgp-Em-djZ">
-                                        <rect key="frame" x="0.0" y="238.66666666666666" width="334" height="69.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="222" width="334" height="64"/>
                                         <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                         <state key="normal" title="Settings">
@@ -93,11 +97,12 @@
                                         </state>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
+                                                <integer key="value" value="30"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="btnGoToSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezv-mi-VgV"/>
+                                            <segue destination="clD-9n-lGg" kind="show" identifier="SettingsSegue" id="fGP-qX-mb8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -116,10 +121,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="H57-6C-FuV"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
+            <point key="canvasLocation" x="112" y="134"/>
         </scene>
         <!--Game Page View Controller-->
         <scene sceneID="Feh-Wd-R7o">
@@ -131,10 +137,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="W4M-kT-rsd"/>
                     </view>
+                    <navigationItem key="navigationItem" id="EQC-IC-F9y"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0k-XH-3WH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="907" y="991"/>
+            <point key="canvasLocation" x="-372" y="977"/>
         </scene>
         <!--Tech Page View Controller-->
         <scene sceneID="ve9-Lq-xMq">
@@ -146,10 +153,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="132-Xk-LOQ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ANn-1I-sFB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZe-NN-iHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-465" y="992"/>
+            <point key="canvasLocation" x="809" y="977"/>
         </scene>
         <!--Settings Page View Controller-->
         <scene sceneID="eAN-TO-eTv">
@@ -161,10 +169,29 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="jRg-XG-sdA"/>
                     </view>
+                    <navigationItem key="navigationItem" id="pqs-QJ-6dZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqU-II-vrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1274" y="134"/>
+            <point key="canvasLocation" x="1151" y="288"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hza-UN-w0s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="his-Vp-zTb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KAf-bE-tSf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="o0n-a8-5oq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBA-Bc-hey" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-933" y="-591"/>
         </scene>
     </scenes>
 </document>
