@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Search Page View Controller-->
         <scene sceneID="Xgx-A5-iJ9">
             <objects>
-                <viewController id="HUQ-V3-htI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchPage" id="HUQ-V3-htI" customClass="SearchPageViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="inS-NU-SCY">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,7 +25,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomePage" id="BYZ-38-t0r" customClass="ViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -121,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="137.68115942028987" y="133.69565217391306"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Page View Controller-->
         <scene sceneID="Feh-Wd-R7o">
             <objects>
-                <viewController id="XNa-X7-HjF" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GamePage" id="XNa-X7-HjF" customClass="GamePageViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qR8-lA-3hk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,10 +136,10 @@
             </objects>
             <point key="canvasLocation" x="907" y="991"/>
         </scene>
-        <!--View Controller-->
+        <!--Tech Page View Controller-->
         <scene sceneID="ve9-Lq-xMq">
             <objects>
-                <viewController id="Bc3-Gd-Wvy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TechPage" id="Bc3-Gd-Wvy" customClass="TechPageViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bpJ-gq-Enw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="-465" y="992"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings Page View Controller-->
         <scene sceneID="eAN-TO-eTv">
             <objects>
-                <viewController id="clD-9n-lGg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SettingsPage" id="clD-9n-lGg" customClass="SettingsPageViewController" customModule="TechReads2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MPp-qD-tuz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

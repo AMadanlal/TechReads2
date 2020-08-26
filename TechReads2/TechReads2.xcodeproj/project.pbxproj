@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D318490524F64F500056D2C2 /* SearchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318490424F64F500056D2C2 /* SearchPageViewController.swift */; };
+		D318490924F64FC60056D2C2 /* SettingsPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318490824F64FC60056D2C2 /* SettingsPageViewController.swift */; };
+		D318490D24F65A3F0056D2C2 /* TechPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318490C24F65A3F0056D2C2 /* TechPageViewController.swift */; };
+		D318491124F65B980056D2C2 /* GamePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D318491024F65B980056D2C2 /* GamePageViewController.swift */; };
 		D3D76B4424F3BF900059EFEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D76B4324F3BF900059EFEF /* AppDelegate.swift */; };
 		D3D76B4624F3BF900059EFEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D76B4524F3BF900059EFEF /* SceneDelegate.swift */; };
 		D3D76B4824F3BF900059EFEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D76B4724F3BF900059EFEF /* ViewController.swift */; };
@@ -17,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D318490424F64F500056D2C2 /* SearchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageViewController.swift; sourceTree = "<group>"; };
+		D318490824F64FC60056D2C2 /* SettingsPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPageViewController.swift; sourceTree = "<group>"; };
+		D318490C24F65A3F0056D2C2 /* TechPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechPageViewController.swift; sourceTree = "<group>"; };
+		D318491024F65B980056D2C2 /* GamePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePageViewController.swift; sourceTree = "<group>"; };
 		D3D76B4024F3BF8F0059EFEF /* TechReads2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechReads2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3D76B4324F3BF900059EFEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3D76B4524F3BF900059EFEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +47,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D31848FF24F64CC40056D2C2 /* MainStoryborad */ = {
+			isa = PBXGroup;
+			children = (
+				D3D76B4924F3BF900059EFEF /* Main.storyboard */,
+			);
+			path = MainStoryborad;
+			sourceTree = "<group>";
+		};
+		D318490024F64CE50056D2C2 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				D318490124F64CF70056D2C2 /* HomeScreenView */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		D318490124F64CF70056D2C2 /* HomeScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				D3D76B4724F3BF900059EFEF /* ViewController.swift */,
+			);
+			path = HomeScreenView;
+			sourceTree = "<group>";
+		};
+		D318490224F64D1B0056D2C2 /* SearchPage */ = {
+			isa = PBXGroup;
+			children = (
+				D318490324F64D2B0056D2C2 /* SearchPageView */,
+			);
+			path = SearchPage;
+			sourceTree = "<group>";
+		};
+		D318490324F64D2B0056D2C2 /* SearchPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D318490424F64F500056D2C2 /* SearchPageViewController.swift */,
+			);
+			path = SearchPageView;
+			sourceTree = "<group>";
+		};
+		D318490624F64FA30056D2C2 /* SettingsPage */ = {
+			isa = PBXGroup;
+			children = (
+				D318490724F64FAC0056D2C2 /* SettingsPageView */,
+			);
+			path = SettingsPage;
+			sourceTree = "<group>";
+		};
+		D318490724F64FAC0056D2C2 /* SettingsPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D318490824F64FC60056D2C2 /* SettingsPageViewController.swift */,
+			);
+			path = SettingsPageView;
+			sourceTree = "<group>";
+		};
+		D318490A24F65A220056D2C2 /* TechPage */ = {
+			isa = PBXGroup;
+			children = (
+				D318490B24F65A2B0056D2C2 /* TechPageView */,
+			);
+			path = TechPage;
+			sourceTree = "<group>";
+		};
+		D318490B24F65A2B0056D2C2 /* TechPageView */ = {
+			isa = PBXGroup;
+			children = (
+				D318490C24F65A3F0056D2C2 /* TechPageViewController.swift */,
+			);
+			path = TechPageView;
+			sourceTree = "<group>";
+		};
+		D318490E24F65A880056D2C2 /* GamePage */ = {
+			isa = PBXGroup;
+			children = (
+				D318490F24F65A910056D2C2 /* GamePageView */,
+			);
+			path = GamePage;
+			sourceTree = "<group>";
+		};
+		D318490F24F65A910056D2C2 /* GamePageView */ = {
+			isa = PBXGroup;
+			children = (
+				D318491024F65B980056D2C2 /* GamePageViewController.swift */,
+			);
+			path = GamePageView;
+			sourceTree = "<group>";
+		};
 		D3D76B3724F3BF8F0059EFEF = {
 			isa = PBXGroup;
 			children = (
@@ -58,10 +154,14 @@
 		D3D76B4224F3BF8F0059EFEF /* TechReads2 */ = {
 			isa = PBXGroup;
 			children = (
+				D318490E24F65A880056D2C2 /* GamePage */,
+				D318490A24F65A220056D2C2 /* TechPage */,
+				D318490624F64FA30056D2C2 /* SettingsPage */,
+				D318490224F64D1B0056D2C2 /* SearchPage */,
+				D318490024F64CE50056D2C2 /* HomeScreen */,
+				D31848FF24F64CC40056D2C2 /* MainStoryborad */,
 				D3D76B4324F3BF900059EFEF /* AppDelegate.swift */,
 				D3D76B4524F3BF900059EFEF /* SceneDelegate.swift */,
-				D3D76B4724F3BF900059EFEF /* ViewController.swift */,
-				D3D76B4924F3BF900059EFEF /* Main.storyboard */,
 				D3D76B4F24F3BF900059EFEF /* Assets.xcassets */,
 				D3D76B5124F3BF900059EFEF /* LaunchScreen.storyboard */,
 				D3D76B5424F3BF900059EFEF /* Info.plist */,
@@ -142,8 +242,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D76B4E24F3BF900059EFEF /* TechReads2.xcdatamodeld in Sources */,
+				D318490524F64F500056D2C2 /* SearchPageViewController.swift in Sources */,
+				D318490924F64FC60056D2C2 /* SettingsPageViewController.swift in Sources */,
 				D3D76B4824F3BF900059EFEF /* ViewController.swift in Sources */,
 				D3D76B4424F3BF900059EFEF /* AppDelegate.swift in Sources */,
+				D318491124F65B980056D2C2 /* GamePageViewController.swift in Sources */,
+				D318490D24F65A3F0056D2C2 /* TechPageViewController.swift in Sources */,
 				D3D76B4624F3BF900059EFEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
