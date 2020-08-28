@@ -156,28 +156,60 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZAh-F4-iCr">
-                                <rect key="frame" x="30" y="74" width="354" height="150"/>
+                                <rect key="frame" x="30" y="74" width="354" height="177"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tIx-u9-WaB">
-                                        <rect key="frame" x="0.0" y="0.0" width="162" height="150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="162" height="177"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                     </imageView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybt-9s-B6U">
-                                        <rect key="frame" x="192" y="0.0" width="162" height="150"/>
-                                        <color key="backgroundColor" systemColor="systemGray3Color" red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <rect key="frame" x="192" y="0.0" width="162" height="177"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="150" id="TOu-lF-Ku7"/>
-                                    <constraint firstAttribute="width" secondItem="ZAh-F4-iCr" secondAttribute="height" multiplier="59:25" id="oOH-no-498"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="TOu-lF-Ku7"/>
+                                    <constraint firstAttribute="width" secondItem="ZAh-F4-iCr" secondAttribute="height" multiplier="16:8" id="oOH-no-498"/>
                                 </constraints>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ynz-nk-og4">
+                                <rect key="frame" x="30" y="281" width="354" height="361"/>
+                                <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="Nbp-Ms-Y8d"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGS-8t-eiE">
+                                <rect key="frame" x="30" y="672" width="354" height="34"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <state key="normal" title="Next Story">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="ZAh-F4-iCr" firstAttribute="top" secondItem="W4M-kT-rsd" secondAttribute="top" constant="30" id="2vy-DP-WqE"/>
+                            <constraint firstItem="W4M-kT-rsd" firstAttribute="trailing" secondItem="AGS-8t-eiE" secondAttribute="trailing" constant="30" id="5G3-ml-cab"/>
+                            <constraint firstItem="ynz-nk-og4" firstAttribute="leading" secondItem="W4M-kT-rsd" secondAttribute="leading" constant="30" id="CTN-1H-7QW"/>
                             <constraint firstItem="ZAh-F4-iCr" firstAttribute="centerX" secondItem="qR8-lA-3hk" secondAttribute="centerX" id="GVC-FC-xEp"/>
+                            <constraint firstItem="W4M-kT-rsd" firstAttribute="trailing" secondItem="ynz-nk-og4" secondAttribute="trailing" constant="30" id="Npo-ap-ooS"/>
                             <constraint firstItem="W4M-kT-rsd" firstAttribute="trailing" secondItem="ZAh-F4-iCr" secondAttribute="trailing" constant="30" id="VzH-Sc-Fel"/>
                             <constraint firstItem="ZAh-F4-iCr" firstAttribute="leading" secondItem="W4M-kT-rsd" secondAttribute="leading" constant="30" id="ZE0-xB-Gxb"/>
+                            <constraint firstItem="W4M-kT-rsd" firstAttribute="bottom" secondItem="AGS-8t-eiE" secondAttribute="bottom" constant="30" id="jgw-jg-yxx"/>
+                            <constraint firstItem="AGS-8t-eiE" firstAttribute="top" secondItem="ynz-nk-og4" secondAttribute="bottom" constant="30" id="oMZ-MK-p21"/>
+                            <constraint firstItem="AGS-8t-eiE" firstAttribute="leading" secondItem="W4M-kT-rsd" secondAttribute="leading" constant="30" id="yQE-c3-OxY"/>
+                            <constraint firstItem="ynz-nk-og4" firstAttribute="top" secondItem="ZAh-F4-iCr" secondAttribute="bottom" constant="30" id="yXx-Wx-qEs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="W4M-kT-rsd"/>
                     </view>
