@@ -38,6 +38,9 @@
                         <viewLayoutGuide key="safeArea" id="bOw-9s-WNC"/>
                     </view>
                     <navigationItem key="navigationItem" id="dCt-8l-Ufu"/>
+                    <connections>
+                        <outlet property="searchBar" destination="pEr-wx-iKb" id="OKK-BH-rIt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r9M-tb-HcQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,6 +198,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnGoToNextStory:" destination="XNa-X7-HjF" eventType="touchUpInside" id="Ran-L8-kaz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -214,6 +220,11 @@
                         <viewLayoutGuide key="safeArea" id="W4M-kT-rsd"/>
                     </view>
                     <navigationItem key="navigationItem" id="EQC-IC-F9y"/>
+                    <connections>
+                        <outlet property="gameImageView" destination="tIx-u9-WaB" id="KdS-oT-7f8"/>
+                        <outlet property="gameTextView" destination="ynz-nk-og4" id="u1t-mJ-MUr"/>
+                        <outlet property="graphView" destination="ybt-9s-B6U" id="9Ss-ld-LqL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s0k-XH-3WH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -227,25 +238,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="85S-5l-FSb">
-                                <rect key="frame" x="30" y="74" width="354" height="177"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwk-7T-ulG">
-                                        <rect key="frame" x="0.0" y="0.0" width="162" height="177"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23R-V4-CtR">
-                                        <rect key="frame" x="192" y="0.0" width="162" height="177"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="85S-5l-FSb" secondAttribute="height" multiplier="16:8" id="AT7-Zx-onI"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="QBy-z9-Zg5"/>
-                                </constraints>
-                            </stackView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="V5z-YA-HWd">
-                                <rect key="frame" x="30" y="281" width="354" height="361"/>
+                                <rect key="frame" x="30" y="304" width="354" height="338"/>
                                 <color key="backgroundColor" systemColor="systemGray5Color" red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -259,25 +253,38 @@
                                 <state key="normal" title="Next Story">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="btnGoToNextTechStory:" destination="Bc3-Gd-Wvy" eventType="touchUpInside" id="TwO-YT-7jf"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qwk-7T-ulG">
+                                <rect key="frame" x="30" y="74" width="354" height="200"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="qwk-7T-ulG" secondAttribute="height" multiplier="177:100" id="OFf-2E-eLL"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="85S-5l-FSb" firstAttribute="centerX" secondItem="bpJ-gq-Enw" secondAttribute="centerX" id="J89-hx-Tmn"/>
                             <constraint firstItem="f49-4t-00o" firstAttribute="leading" secondItem="132-Xk-LOQ" secondAttribute="leading" constant="30" id="Nje-ss-E7X"/>
                             <constraint firstItem="f49-4t-00o" firstAttribute="top" secondItem="V5z-YA-HWd" secondAttribute="bottom" constant="30" id="Nwa-ff-WGE"/>
                             <constraint firstItem="V5z-YA-HWd" firstAttribute="leading" secondItem="132-Xk-LOQ" secondAttribute="leading" constant="30" id="QUU-sO-Mfe"/>
                             <constraint firstItem="132-Xk-LOQ" firstAttribute="trailing" secondItem="f49-4t-00o" secondAttribute="trailing" constant="30" id="SGa-OL-Nd8"/>
-                            <constraint firstItem="132-Xk-LOQ" firstAttribute="trailing" secondItem="85S-5l-FSb" secondAttribute="trailing" constant="30" id="ZnP-Uk-GIt"/>
-                            <constraint firstItem="85S-5l-FSb" firstAttribute="leading" secondItem="132-Xk-LOQ" secondAttribute="leading" constant="30" id="aS6-Wy-YQu"/>
+                            <constraint firstItem="V5z-YA-HWd" firstAttribute="top" secondItem="qwk-7T-ulG" secondAttribute="bottom" constant="30" id="Wh0-Ti-KI1"/>
                             <constraint firstItem="132-Xk-LOQ" firstAttribute="bottom" secondItem="f49-4t-00o" secondAttribute="bottom" constant="30" id="ahL-8E-f05"/>
-                            <constraint firstItem="V5z-YA-HWd" firstAttribute="top" secondItem="85S-5l-FSb" secondAttribute="bottom" constant="30" id="gjU-B1-is5"/>
+                            <constraint firstItem="132-Xk-LOQ" firstAttribute="trailing" secondItem="qwk-7T-ulG" secondAttribute="trailing" constant="30" id="bEw-Bz-XCM"/>
+                            <constraint firstItem="qwk-7T-ulG" firstAttribute="leading" secondItem="132-Xk-LOQ" secondAttribute="leading" constant="30" id="jZP-ys-sNs"/>
+                            <constraint firstItem="qwk-7T-ulG" firstAttribute="top" secondItem="132-Xk-LOQ" secondAttribute="top" constant="30" id="lNm-YK-b8h"/>
                             <constraint firstItem="132-Xk-LOQ" firstAttribute="trailing" secondItem="V5z-YA-HWd" secondAttribute="trailing" constant="30" id="lpO-NM-SsK"/>
-                            <constraint firstItem="85S-5l-FSb" firstAttribute="top" secondItem="132-Xk-LOQ" secondAttribute="top" constant="30" id="paq-ZC-48R"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="132-Xk-LOQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="ANn-1I-sFB"/>
+                    <connections>
+                        <outlet property="techImageView" destination="qwk-7T-ulG" id="Shw-OT-EZQ"/>
+                        <outlet property="techNewsTextView" destination="V5z-YA-HWd" id="6T5-nE-3Rs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MZe-NN-iHO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -316,6 +323,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnSavePreferences:" destination="clD-9n-lGg" eventType="touchUpInside" id="bor-aq-yZS"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -333,6 +343,9 @@
                         <viewLayoutGuide key="safeArea" id="jRg-XG-sdA"/>
                     </view>
                     <navigationItem key="navigationItem" id="pqs-QJ-6dZ"/>
+                    <connections>
+                        <outlet property="mediumPreferencePicker" destination="fCd-D5-EaN" id="MEj-7Q-NLx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqU-II-vrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

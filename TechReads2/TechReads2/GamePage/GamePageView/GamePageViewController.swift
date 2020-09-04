@@ -11,4 +11,11 @@ import UIKit
 
 class GamePageViewController: UIViewController {
   
+  @IBOutlet weak var gameImageView: UIImageView!
+  @IBOutlet weak var graphView: UIView!
+  @IBOutlet weak var gameTextView: UITextView!
+ 
+  @IBAction func btnGoToNextStory(_ sender: UIButton) {
+  
+  }
 }

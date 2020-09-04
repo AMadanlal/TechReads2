@@ -10,5 +10,9 @@ import Foundation
 import UIKit
 
 class SettingsPageViewController: UIViewController {
+  @IBOutlet weak var mediumPreferencePicker: UIPickerView!
+  
+  @IBAction func btnSavePreferences(_ sender: UIButton) {
+  }
   
 }

@@ -10,5 +10,6 @@ import Foundation
 import UIKit
 
 class SearchPageViewController: UIViewController {
+  @IBOutlet weak var searchBar: UISearchBar!
   
 }
