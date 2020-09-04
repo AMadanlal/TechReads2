@@ -345,6 +345,7 @@
                     <navigationItem key="navigationItem" id="pqs-QJ-6dZ"/>
                     <connections>
                         <outlet property="mediumPreferencePicker" destination="fCd-D5-EaN" id="MEj-7Q-NLx"/>
+                        <outlet property="preferenceLabel" destination="ZEb-Qi-9oY" id="nrw-h7-Rcn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vqU-II-vrz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
